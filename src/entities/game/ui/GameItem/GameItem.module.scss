@@ -1,0 +1,44 @@
+.GameItem {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  width: 300px;
+  margin: 20px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.pict {
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  .photo {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding: 10px 20px;
+  text-align: center;
+}
